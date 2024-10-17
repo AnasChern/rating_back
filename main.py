@@ -5,6 +5,7 @@ from user_crud import load_user_crud
 from rating_crud import load_rating_crud
 from login_module import load_login_module_crud
 
+
 from database import db_session, init_db
 
 
@@ -28,5 +29,5 @@ if __name__ == "__main__":
     load_user_crud(app, db_session)
     load_rating_crud(app, db_session)
     load_login_module_crud(app, db_session)
-
-    app.run()
+    
+    app.run(host="0.0.0.0", port=8080)
