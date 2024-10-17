@@ -30,4 +30,4 @@ if __name__ == "__main__":
     load_rating_crud(app, db_session)
     load_login_module_crud(app, db_session)
     
-    app.run(host="0.0.0.0", port=8080)
+    app.run()
